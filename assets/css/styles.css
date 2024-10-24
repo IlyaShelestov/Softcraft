@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+}
+
+.color-bg-secondary {
+  background-color: #f9f9fc;
+}
+
+.color-bg-purple {
+  background-color: #7b57df;
+}
+
+.color-text-purple {
+  color: #7b57df !important;
+}
+
+.color-text-main {
+  color: #2b2d33;
+}
+
+.text-bold {
+  font-family: "Gilroy-Bold", sans-serif !important;
+}
+
+body {
+  font-family: "Gilroy-Regular", sans-serif;
+  color: #1b2149;
+}
