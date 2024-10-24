@@ -63,7 +63,6 @@ h6 {
 
 body {
   font-family: "Gilroy-Regular", sans-serif;
-  background-color: #ffffff;
   font-size: 16px;
 }
 
@@ -87,6 +86,21 @@ nav {
 
 section {
   padding: 100px 0;
+}
+
+.btn {
+  background-color: #7b57df;
+  color: white;
+  border: none;
+  min-height: 57px;
+  min-width: 300px;
+  border-radius: 5px;
+  border-radius: 45px;
+}
+
+.btn:hover {
+  background-color: #b3a1e5;
+  color: white;
 }
 
 @media (max-width: 600px) {

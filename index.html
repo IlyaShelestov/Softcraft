@@ -12,13 +12,16 @@
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <body>
+  <body class="bg-white">
     <div class="container">
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top rounded-bottom bg-white">
         <div class="container-fluid text-medium">
           <a class="navbar-brand" href="#">
-            <img src="./assets/images/Sofrcraft_logo.svg" alt="Softcraft" />
+            <img
+              src="./assets/images/Sofrcraft_logo.svg"
+              alt="Softcraft Logo"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -41,20 +44,20 @@
                   >Партнеры</a
                 >
               </li>
-              <li class="nav-item ms-4">
+              <li class="nav-item ms-lg-4">
                 <a class="nav-link color-text-dark" href="#about">О нас</a>
               </li>
-              <li class="nav-item ms-4">
+              <li class="nav-item ms-lg-4">
                 <a class="nav-link color-text-dark" href="#solutions"
                   >Наши решения</a
                 >
               </li>
-              <li class="nav-item ms-4">
+              <li class="nav-item ms-lg-4">
                 <a class="nav-link color-text-dark" href="#team">Команда</a>
               </li>
-              <li class="nav-item ms-4">
+              <li class="nav-item ms-lg-4">
                 <a class="nav-link color-text-dark" href="#contacts"
-                  >Свяжитесь с нами</a
+                  >Связаться с нами</a
                 >
               </li>
             </ul>
@@ -66,15 +69,19 @@
     <main>
       <!-- WELCOME -->
       <section class="color-bg-secondary" id="welcome">
-        <div class="container">
-          <h1>
-            Автоматизируем логистику, склады и фулфилмент в одной экосистеме
+        <div class="container text-center">
+          <h1 class="text-bold">
+            <span class="color-text-purple">Автоматизируем</span> логистику,
+            склады и фулфилмент в одной экосистеме
           </h1>
-          <h5>
-            Управление логистикой, доставкой и складами
-          </h5>
-          <h5>Эффективный учет и
-            аналитика в реальном времени</h5>
+          <h5 class="mt-4">Управление логистикой, доставкой и складами</h5>
+          <h5 class="mb-5">Эффективный учет и аналитика в реальном времени</h5>
+          <a href="#contacts"><button class="btn">Связаться с нами</button></a>
+          <img
+            class="mt-5 w-100"
+            src="./assets/images/app.png"
+            alt="Application Image"
+          />
         </div>
       </section>
       <!-- PARTNERS -->
