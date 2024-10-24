@@ -8,12 +8,21 @@
   src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+
+.filler {
+  height: 80px;
+}
+
 .color-bg-secondary {
-  background-color: #f9f9fc;
+  background-color: #f9f9fc !important;
 }
 
 .color-bg-purple {
-  background-color: #7b57df;
+  background-color: #7b57df !important;
 }
 
 .color-text-purple {
@@ -21,14 +30,67 @@
 }
 
 .color-text-main {
-  color: #2b2d33;
+  color: #2b2d33 !important;
+}
+
+.color-text-dark {
+  color: #1b2149 !important;
 }
 
 .text-bold {
   font-family: "Gilroy-Bold", sans-serif !important;
 }
 
+.text-medium {
+  font-family: "Gilroy-Medium", sans-serif !important;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
 body {
   font-family: "Gilroy-Regular", sans-serif;
-  color: #1b2149;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+nav {
+  width: inherit;
+  max-width: inherit;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.active {
+  color: #7b57df !important;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+.nav-link:hover {
+  color: #b3a1e5 !important;
+}
+
+section {
+  padding: 100px 0;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 40px 0;
+  }
 }
