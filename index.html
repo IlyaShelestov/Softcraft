@@ -19,7 +19,13 @@
         <div class="container-fluid text-medium">
           <a class="navbar-brand" href="#">
             <img
+              class="d-none d-md-block d-lg-block d-xl-block"
               src="./assets/images/Sofrcraft_logo.svg"
+              alt="Softcraft Logo"
+            />
+            <img
+              class="d-sm-block d-md-none d-lg-none"
+              src="./assets/images/sign.png"
               alt="Softcraft Logo"
             />
           </a>
@@ -74,11 +80,24 @@
             <span class="color-text-purple">Автоматизируем</span> логистику,
             склады и фулфилмент в одной экосистеме
           </h1>
-          <h5 class="mt-4">Управление логистикой, доставкой и складами</h5>
-          <h5 class="mb-5">Эффективный учет и аналитика в реальном времени</h5>
+          <div class="mt-1 mb-1 d-sm-block d-md-block d-lg-none">
+            <h5>
+              Управление логистикой, доставкой и складами. Эффективный учет и
+              аналитика в реальном времени
+            </h5>
+          </div>
+          <div class="mt-4 mb-5 d-none d-lg-block d-xl-block">
+            <h5>Управление логистикой, доставкой и складами</h5>
+            <h5>Эффективный учет и аналитика в реальном времени</h5>
+          </div>
+          <img
+            class="w-100 d-sm-block d-md-block d-lg-none mb-4"
+            src="./assets/images/registration.png"
+            alt="Registration Image"
+          />
           <a href="#contacts"><button class="btn">Связаться с нами</button></a>
           <img
-            class="mt-5 w-100"
+            class="mt-5 w-100 d-none d-lg-block d-xl-block"
             src="./assets/images/app.png"
             alt="Application Image"
           />
@@ -96,6 +115,7 @@
       <section id="contacts"></section>
     </main>
   </body>
+  <script src="./assets/scripts/scroll.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
