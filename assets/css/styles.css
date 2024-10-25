@@ -116,6 +116,14 @@ section {
   padding-top: 0;
 }
 
+#contacts {
+  padding-top: 0;
+}
+
+#contacts .panel {
+  padding-top: 60px;
+}
+
 /* Buttons */
 
 .btn {
@@ -178,6 +186,10 @@ footer .nav-link {
 
   #welcome {
     padding-bottom: 40px;
+  }
+
+  #contacts .panel {
+    padding-top: 40px;
   }
 
   h1 {
