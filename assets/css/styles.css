@@ -188,6 +188,11 @@ footer .linkedin-icon svg {
   font-family: "Gilroy-Medium", sans-serif !important;
 }
 
+#up-arrow {
+  bottom: 5%;
+  right: 5%;
+}
+
 /* Footer */
 
 footer .nav-link {
