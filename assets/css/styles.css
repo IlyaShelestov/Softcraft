@@ -35,6 +35,10 @@
   color: #1b2149 !important;
 }
 
+.color-text-gray {
+  color: #555a65 !important;
+}
+
 /* Fonts */
 
 .text-bold {
@@ -196,5 +200,9 @@ section {
 
   #partner4 {
     content: url("../images/partners4-color.png");
+  }
+
+  #why-us img {
+    width: 44px;
   }
 }
