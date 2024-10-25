@@ -13,9 +13,7 @@
   src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
 }
 
-.filler {
-  height: 80px;
-}
+/* Colors */
 
 .color-bg-secondary {
   background-color: #f9f9fc !important;
@@ -36,6 +34,8 @@
 .color-text-dark {
   color: #1b2149 !important;
 }
+
+/* Fonts */
 
 .text-bold {
   font-family: "Gilroy-Bold", sans-serif !important;
@@ -70,6 +70,8 @@ body {
   font-size: 16px;
 }
 
+/* Navbar */
+
 nav {
   width: inherit;
   max-width: inherit;
@@ -88,9 +90,25 @@ nav {
   color: #b3a1e5 !important;
 }
 
+/* Sections */
+
+.filler {
+  height: 80px;
+}
+
 section {
   padding: 100px 0;
 }
+
+#welcome {
+  padding-bottom: 60px;
+}
+
+#about {
+  padding-top: 0;
+}
+
+/* Buttons */
 
 .btn {
   background-color: #7b57df;
@@ -107,13 +125,21 @@ section {
   color: white;
 }
 
-#welcome {
-  padding-bottom: 60px;
+/* Partners */
+
+#partners img {
+  align-self: center;
 }
 
-#about {
-  padding-top: 0;
+#partner2:hover {
+  content: url("../images/partners2-color.png");
 }
+
+#partner4:hover {
+  content: url("../images/partners4-color.png");
+}
+
+/* Mobile */
 
 @media (max-width: 767px) {
   section {
@@ -136,5 +162,16 @@ section {
 
   h6 {
     font-size: 20px;
+  }
+  #partners .d-flex {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #partner2 {
+    content: url("../images/partners2-color.png");
+  }
+
+  #partner4 {
+    content: url("../images/partners4-color.png");
   }
 }
