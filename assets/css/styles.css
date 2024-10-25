@@ -169,10 +169,6 @@ footer .nav-link {
   font-size: 14px;
 }
 
-footer .nav-link:hover {
-  color: initial !important;
-}
-
 /* Mobile */
 
 @media (max-width: 767px) {
