@@ -45,6 +45,10 @@
   font-family: "Gilroy-Medium", sans-serif !important;
 }
 
+.text-regular {
+  font-family: "Gilroy-Regular", sans-serif !important;
+}
+
 h1 {
   font-size: 64px;
 }
@@ -139,15 +143,28 @@ section {
   content: url("../images/partners4-color.png");
 }
 
+/* LinkedIn Icon */
+
+.linkedin-icon svg path {
+  fill: #c3c8e6;
+  transition: fill 0.3s ease;
+}
+
+.linkedin-icon:hover svg path {
+  fill: #0a66c2;
+}
+
 /* Mobile */
 
 @media (max-width: 767px) {
   section {
     padding: 40px 0;
   }
+
   #welcome {
     padding-bottom: 40px;
   }
+
   h1 {
     font-size: 28px;
   }
@@ -163,10 +180,16 @@ section {
   h6 {
     font-size: 20px;
   }
+
+  p {
+    font-size: 14px;
+  }
+
   #partners .d-flex {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
   #partner2 {
     content: url("../images/partners2-color.png");
   }
