@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Softcraft</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/sign.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -244,7 +262,106 @@
       <!-- Contacts -->
       <section id="contacts">
         <div class="container">
-          <div class="panel color-bg-secondary w-100 px-2 pb-2 rounded-4"></div>
+          <div
+            class="panel color-bg-secondary w-100 ps-2 ps-md-5 pe-2 pb-2 rounded-4 w-100"
+          >
+            <h1
+              class="color-text-dark text-bold mb-md-5 text-center text-md-start"
+            >
+              Свяжитесь с нами
+            </h1>
+            <h6 class="color-text-dark d-block d-md-none text-center mb-4">
+              Задайте вопрос или получите консультацию
+            </h6>
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <div class="row">
+                  <div class="col-12 col-md-8 order-3 order-md-1">
+                    <h6 class="color-text-dark d-none mb-4 d-md-block">
+                      Задайте вопрос или получите консультацию
+                    </h6>
+                    <form class="w-100 h-100 d-flex d-md-block flex-column">
+                      <div class="mb-3 mb-md-4">
+                        <input
+                          class="form-control w-100"
+                          type="text"
+                          name="email-phone"
+                          placeholder="Введите свой e-mail или телефон"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3 mb-md-4">
+                        <textarea
+                          class="form-control w-100"
+                          name="message"
+                          placeholder="Вопрос или сообщение"
+                          rows="4"
+                        ></textarea>
+                      </div>
+                      <button type="submit" class="btn">Отправить</button>
+                    </form>
+                  </div>
+
+                  <div class="col-12 d-block d-md-none order-2 mt-4 mb-3">
+                    <img
+                      class="img-fluid d-block mx-auto"
+                      src="./assets/images/password.svg"
+                    />
+                  </div>
+
+                  <div class="col-12 col-md-4 order-1 order-md-3">
+                    <div class="mb-4 mb-md-5">
+                      <h6 class="color-text-dark text-semibold mb-2 mb-md-3">
+                        Наш телефон
+                      </h6>
+                      <a class="text-decoration-none" href="tel:+77785227072"
+                        ><h6 class="color-text-purple mobile-small">
+                          +77785227072
+                        </h6></a
+                      >
+                    </div>
+
+                    <div>
+                      <div class="row">
+                        <div class="col-10 col-md-12 mb-0 mb-md-3">
+                          <h6 class="color-text-dark text-semibold">Офис</h6>
+                          <h6 class="color-text-dark mb-0 mb-md-3 mobile-small">
+                            г. Алматы, ул. Спасская 70
+                          </h6>
+                          <h6 class="color-text-dark mobile-small">
+                            Пн-Пт: 09:00 - 18:00
+                          </h6>
+                        </div>
+                        <div class="col-2 col-md-12 py-auto">
+                          <a
+                            href="https://www.linkedin.com/company/softcraft-llp"
+                            target="_blank"
+                            class="linkedin-icon"
+                          >
+                            <svg
+                              width="48"
+                              height="48"
+                              viewBox="0 0 48 48"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M40 0H8C3.582 0 0 3.582 0 8V40C0 44.418 3.582 48 8 48H40C44.418 48 48 44.418 48 40V8C48 3.582 44.418 0 40 0ZM16 39H11V19H16V39ZM16.029 15.009C15.382 15.669 14.538 16 13.5 16C12.474 16 11.635 15.659 10.981 14.977C10.327 14.295 10 13.458 10 12.468C10 11.448 10.327 10.616 10.981 9.97C11.635 9.323 12.474 9 13.5 9C14.538 9 15.382 9.323 16.029 9.969C16.676 10.615 17 11.448 17 12.468C17 13.502 16.676 14.349 16.029 15.009ZM39 39H34V27.887C34 24.788 32.214 23 30 23C28.933 23 27.726 23.648 27.035 24.469C26.344 25.29 26 26.331 26 27.594V39H21V19H26V22.164H26.078C27.55 19.729 29.691 18.52 32.504 18.512C36.5 18.5 39 21.5 39 26.754V39Z"
+                                fill="#C3C8E6"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none d-md-block col-4">
+                <img class="img-fluid" src="./assets/images/password.svg" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
