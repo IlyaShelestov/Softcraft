@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav-link");
+  const navLinks = document.querySelectorAll("nav .nav-link");
 
   window.addEventListener("scroll", function () {
     let current = "";
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (pageYOffset >= sectionTop - sectionHeight / 3) {
         const sectionId = section.getAttribute("id");
 
-        if (document.querySelector(`.nav-link[href="#${sectionId}"]`)) {
+        if (document.querySelector(`nav .nav-link[href="#${sectionId}"]`)) {
           current = sectionId;
         }
       }

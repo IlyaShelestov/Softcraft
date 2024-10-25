@@ -16,7 +16,7 @@
 /* Colors */
 
 .color-bg-secondary {
-  background-color: #f9f9fc !important;
+  background-color: #f9f9fc;
 }
 
 .color-bg-purple {
@@ -158,6 +158,21 @@ section {
   fill: #0a66c2;
 }
 
+footer .linkedin-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer */
+
+footer .nav-link {
+  font-size: 14px;
+}
+
+footer .nav-link:hover {
+  color: initial !important;
+}
+
 /* Mobile */
 
 @media (max-width: 767px) {
@@ -204,5 +219,9 @@ section {
 
   #why-us img {
     width: 44px;
+  }
+
+  footer {
+    background-color: white !important;
   }
 }
