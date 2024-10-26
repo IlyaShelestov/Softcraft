@@ -180,6 +180,29 @@ footer .linkedin-icon svg {
   height: 24px;
 }
 
+/* Team */
+
+#team img.img-fluid {
+  transition: transform 0.4s ease;
+}
+
+#team img.img-fluid:hover {
+  transform: scale(1.05);
+  cursor: none;
+}
+
+.team-row {
+  width: 50%;
+}
+
+.member-type-1 {
+  width: 77%;
+}
+
+.member-type-2 {
+  width: 92%;
+}
+
 /* Contacts */
 
 ::placeholder {
@@ -253,6 +276,29 @@ footer .nav-link {
 
   #why-us img {
     width: 44px;
+  }
+
+  .member {
+    width: 240px;
+  }
+
+  .member img {
+    width: 240px;
+    height: 280px;
+    border-radius: 7px;
+    object-fit: cover;
+  }
+
+  #team img.img-fluid {
+    transition: none;
+  }
+
+  #team img.img-fluid:hover {
+    transform: none;
+  }
+
+  .team-row {
+    width: auto;
   }
 
   #contacts {
