@@ -156,12 +156,20 @@ section {
   align-self: center;
 }
 
+#partner1:hover {
+  content: url("../images/partners1-color.svg");
+}
+
 #partner2:hover {
-  content: url("../images/partners2-color.png");
+  content: url("../images/partners2-color.svg");
+}
+
+#partner3:hover {
+  content: url("../images/partners3-color.svg");
 }
 
 #partner4:hover {
-  content: url("../images/partners4-color.png");
+  content: url("../images/partners4-color.svg");
 }
 
 /* LinkedIn Icon */
@@ -266,12 +274,20 @@ footer .nav-link {
     -webkit-overflow-scrolling: touch;
   }
 
+  #partner1 {
+    content: url("../images/partners1-color.svg");
+  }
+
   #partner2 {
-    content: url("../images/partners2-color.png");
+    content: url("../images/partners2-color.svg");
+  }
+
+  #partner3 {
+    content: url("../images/partners3-color.svg");
   }
 
   #partner4 {
-    content: url("../images/partners4-color.png");
+    content: url("../images/partners4-color.svg");
   }
 
   #why-us img {
