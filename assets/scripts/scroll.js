@@ -1,27 +1,40 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav .nav-link");
+  const navItems = document.querySelectorAll(".navbar-nav .nav-item");
 
-  window.addEventListener("scroll", function () {
-    let current = "";
+  const removeActiveClasses = () => {
+    navItems.forEach((item) => {
+      item.querySelector(".nav-link").classList.remove("active");
+      item.querySelector(".underline").classList.remove("active-underline");
+    });
+  };
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        const sectionId = section.getAttribute("id");
+  const setActiveLink = (id) => {
+    removeActiveClasses();
+    const activeItem = document
+      .querySelector(`.navbar-nav .nav-link[href="#${id}"]`)
+      ?.closest(".nav-item");
 
-        if (document.querySelector(`nav .nav-link[href="#${sectionId}"]`)) {
-          current = sectionId;
-        }
+    if (activeItem) {
+      activeItem.querySelector(".nav-link").classList.add("active");
+      activeItem.querySelector(".underline").classList.add("active-underline");
+    }
+  };
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observerCallback = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveLink(entry.target.id);
       }
     });
+  };
 
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
-        link.classList.add("active");
-      }
-    });
-  });
+  const observer = new IntersectionObserver(observerCallback, options);
+  sections.forEach((section) => observer.observe(section));
 });

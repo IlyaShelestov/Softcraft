@@ -100,15 +100,35 @@ nav {
   height: 80px;
 }
 
-.active {
-  color: #7b57df !important;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3px;
+.nav-link {
+  transition: color 0.2s ease;
 }
 
 .nav-link:hover {
   color: #b3a1e5 !important;
+}
+
+.underline {
+  bottom: 7px;
+  left: 5%;
+  width: 90%;
+  height: 3px;
+  background-color: #7b57df;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.active-underline {
+  transform: scaleX(1);
+}
+
+.active {
+  color: #7b57df !important;
+}
+
+.active:hover {
+  color: #7b57df !important;
 }
 
 /* Sections */
@@ -298,6 +318,11 @@ footer .nav-link {
 /* Mobile */
 
 @media (max-width: 767px) {
+  #navbarSupportedContent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .btn {
     min-height: 45px;
     min-width: 236px;
