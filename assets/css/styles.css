@@ -188,6 +188,33 @@ section {
   left: 0;
 }
 
+#phone-photo {
+  bottom: -100px;
+  right: 0;
+  z-index: 2;
+}
+
+#phone-photo2 {
+  bottom: -100px;
+  right: 183px;
+  z-index: 1;
+}
+
+#laptop-photo {
+  left: 0;
+  top: 5%;
+}
+
+#ipad-photo {
+  right: 0;
+  top: 7%;
+}
+
+#registration-photo {
+  right: 70px;
+  top: 50px;
+}
+
 /* Partners */
 
 #partners img {
