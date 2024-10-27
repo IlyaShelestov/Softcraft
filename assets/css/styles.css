@@ -24,6 +24,10 @@
   background-color: #f9f9fc;
 }
 
+.color-bg-white {
+  background-color: #ffffff;
+}
+
 .color-bg-purple {
   background-color: #7b57df !important;
 }
@@ -117,6 +121,10 @@ section {
   padding: 100px 0;
 }
 
+#solutions {
+  padding: 0;
+}
+
 #welcome {
   padding-bottom: 60px;
 }
@@ -148,6 +156,36 @@ section {
 .btn:hover {
   background-color: #b3a1e5;
   color: white;
+}
+
+/* Solutions */
+
+.solution {
+  padding: 100px 0;
+}
+
+.solution-text {
+  padding-top: 100px;
+}
+
+.solution-list {
+  margin-top: 40px;
+}
+
+.solution .btn {
+  margin-top: 40px;
+}
+
+.solution-list h6 {
+  position: relative;
+  padding-left: 25px;
+  height: 62px;
+}
+
+.solution-list h6::before {
+  position: absolute;
+  content: url("../images/mark.svg");
+  left: 0;
 }
 
 /* Partners */
@@ -233,12 +271,33 @@ footer .nav-link {
 /* Mobile */
 
 @media (max-width: 767px) {
+  .btn {
+    min-height: 45px;
+    min-width: 236px;
+  }
+
   section {
+    padding: 40px 0;
+  }
+
+  .solution {
     padding: 40px 0;
   }
 
   #welcome {
     padding-bottom: 40px;
+  }
+
+  #solutions {
+    padding: 0;
+  }
+
+  .solution-list {
+    margin-top: 30px;
+  }
+
+  .solution .btn {
+    margin-top: 30px;
   }
 
   #contacts .panel {
@@ -322,8 +381,8 @@ footer .nav-link {
   }
 
   #contacts .btn {
-    min-width: 50%;
-    width: 65%;
+    min-width: 50% !important;
+    width: 65% !important;
     margin: 0 auto;
   }
 
