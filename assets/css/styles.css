@@ -334,6 +334,11 @@ footer .nav-link {
 /* Mobile */
 
 @media (max-width: 767px) {
+  .underline {
+    left: 0;
+    width: 100%;
+  }
+
   #navbarSupportedContent {
     background-color: #ffffff;
     border-bottom: 1px solid #e6e6e6;
