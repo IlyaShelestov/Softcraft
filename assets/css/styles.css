@@ -494,6 +494,15 @@ footer .nav-link {
 /* Tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #navbarSupportedContent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .container {
+    max-width: 90vw;
+  }
+
   #welcome h1 {
     width: 615px;
   }
