@@ -187,7 +187,7 @@ section {
 }
 
 .btn:hover {
-  background-color: #b3a1e5;
+  background-color: #9576eb;
   color: white;
 }
 
@@ -260,7 +260,7 @@ section {
   top: 50%;
   transform: translateY(-50%);
   max-width: 671px;
-  width: 47vw;
+  width: 46vw;
 }
 
 #registration-photo {
@@ -320,7 +320,7 @@ footer .linkedin-icon svg {
 }
 
 .member-type-2 {
-  width: 94%;
+  width: 98%;
 }
 
 /* Contacts */
@@ -504,6 +504,10 @@ footer .nav-link {
     max-width: 90vw;
   }
 
+  #partners img {
+    filter: none;
+  }
+
   #welcome h1 {
     width: 615px;
   }
@@ -520,5 +524,27 @@ footer .nav-link {
 
   footer {
     background-color: white !important;
+  }
+}
+
+/* Desktop Small */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #laptop-photo {
+    width: 42vw;
+  }
+
+  #ipad-photo {
+    width: 38vw;
+  }
+
+  #registration-photo {
+    top: 130px;
+    right: 0;
+    width: 30vw;
+  }
+
+  #partners img {
+    filter: none;
   }
 }
