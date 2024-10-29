@@ -302,6 +302,7 @@ footer .linkedin-icon svg {
 /* Team */
 
 #team img.img-fluid {
+  border-radius: 7px;
   transition: transform 0.4s ease;
 }
 
@@ -315,11 +316,11 @@ footer .linkedin-icon svg {
 }
 
 .member-type-1 {
-  width: 77%;
+  width: 79%;
 }
 
 .member-type-2 {
-  width: 92%;
+  width: 94%;
 }
 
 /* Contacts */
