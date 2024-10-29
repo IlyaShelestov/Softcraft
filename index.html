@@ -18,11 +18,12 @@
 <body class="bg-white">
   <div class="container">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top rounded-bottom bg-white">
+    <nav class="navbar navbar-expand-lg fixed-top rounded-bottom bg-white py-0 py-md-auto">
       <div class="container-fluid text-medium">
         <a class="navbar-brand" href="#">
           <img class="d-none d-md-block" src="./assets/images/Sofrcraft_logo.svg" alt="Softcraft Logo" />
-          <img class="d-block d-md-none" src="./assets/images/sign.svg" alt="Softcraft Logo" />
+          <img class="d-block d-md-none" width="38px" height="38px" src="./assets/images/sign.svg"
+            alt="Softcraft Logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +31,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item position-relative">
-              <a class="nav-link color-text-dark" aria-current="page" href="#partners">Партнеры</a>
-              <div class="underline position-absolute"></div>
-            </li>
             <li class="nav-item ms-lg-4 position-relative">
               <a class="nav-link color-text-dark" href="#about">О нас</a>
               <div class="underline position-absolute"></div>
@@ -61,12 +58,13 @@
     <section class="color-bg-secondary" id="welcome">
       <div class="container">
         <div class="text-center">
-          <h1 class="text-bold color-text-main">
+          <h1 class="text-bold color-text-main mx-auto">
             <span class="color-text-purple">Автоматизируем</span> логистику,
-            склады и фулфилмент в одной экосистеме
+            склады<br class="d-block d-lg-none" />
+            и фулфилмент<br />в одной экосистеме
           </h1>
           <div class="mt-1 mt-md-4 mb-1 mb-md-5 color-text-dark">
-            <h5>
+            <h5 class="mx-auto">
               Управление логистикой, доставкой и складами<span class="d-inline d-md-none">.</span>
               <br class="d-none d-md-block" />Эффективный учет и аналитика в
               реальном времени
@@ -82,18 +80,22 @@
     <section id="partners">
       <div class="container">
         <div class="d-flex justify-content-between flex-nowrap overflow-auto">
-          <img id="partner1" src="./assets/images/partners1-gray.svg" alt="JUST SEND Logo" class="img-fluid me-3" />
-          <img id="partner2" src="./assets/images/partners2-gray.svg" alt="2GIS Logo" class="img-fluid me-3" />
-          <img id="partner3" src="./assets/images/partners3-gray.svg" alt="ALSECO Logo" class="img-fluid me-3" />
-          <img id="partner4" src="./assets/images/partners4-gray.svg" alt="HH Logo" class="img-fluid me-3" />
+          <img id="partner1" src="./assets/images/partners1-color.svg" alt="JUST SEND Logo" class="img-fluid me-3" />
+          <img id="partner2" src="./assets/images/partners2-color.svg" alt="2GIS Logo" class="img-fluid me-3" />
+          <img id="partner3" src="./assets/images/partners3-color.svg" alt="ALSECO Logo" class="img-fluid me-3" />
+          <img id="partner4" src="./assets/images/partners4-color.svg" alt="HH Logo" class="img-fluid me-3" />
         </div>
       </div>
     </section>
     <!-- About -->
     <section id="about">
       <div class="container">
-        <h1 class="d-none d-md-block text-bold pb-4 color-text-main">Softcraft</h1>
-        <h1 class="d-block d-md-none text-bold pb-2 color-text-dark">SoftCraft</h1>
+        <h1 class="d-none d-md-block text-bold pb-4 color-text-main">
+          Softcraft
+        </h1>
+        <h1 class="d-block d-md-none text-bold pb-2 color-text-dark">
+          SoftCraft
+        </h1>
         <div class="row mt-md-5">
           <div class="col-12 col-md-5 mb-3 mb-md-0">
             <h5 class="color-text-dark">
@@ -395,17 +397,17 @@
     </section>
     <!-- Contacts -->
     <section class="position-relative" id="contacts">
-      <a class="position-absolute" href="#" id="up-arrow"><img src="./assets/images/arrow-up.svg" /></a>
+      <a class="position-fixed" href="#" id="up-arrow"><img src="./assets/images/arrow-up.svg" /></a>
       <div class="container">
         <div class="panel color-bg-secondary w-100 ps-2 ps-md-5 pe-2 pb-2 rounded-4 w-100">
           <h1 class="color-text-dark text-bold mb-md-5 text-center text-md-start">
             Свяжитесь с нами
           </h1>
-          <h6 class="color-text-dark d-block d-md-none text-center mb-4">
-            Задайте вопрос или получите консультацию
-          </h6>
+          <h5 class="color-text-dark d-block d-md-none text-center mb-4">
+            Задайте вопрос или получите<br />консультацию
+          </h5>
           <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8 px-0">
               <div class="row">
                 <div class="col-12 col-md-8 order-3 order-md-1">
                   <h6 class="color-text-dark d-none mb-4 d-md-block">
@@ -432,7 +434,7 @@
                   <img class="img-fluid d-block mx-auto" src="./assets/images/password.svg" />
                 </div>
 
-                <div class="col-12 col-md-4 order-1 order-md-3 ps-0 ps-md-3">
+                <div class="col-12 col-md-4 order-1 order-md-3 ps-auto ps-md-3">
                   <div class="mb-4 mb-md-5">
                     <h6 class="color-text-dark text-semibold mb-2 mb-md-3">
                       Наш телефон
@@ -446,7 +448,7 @@
 
                   <div>
                     <div class="row">
-                      <div class="col-10 col-md-12 mb-0 mb-md-3">
+                      <div class="col-9 col-md-12 mb-0 mb-md-3">
                         <h6 class="color-text-dark text-semibold">Офис</h6>
                         <h6 class="color-text-dark mb-0 mb-md-3 mobile-small">
                           г. Алматы, ул. Спасская 70
@@ -455,7 +457,7 @@
                           Пн-Пт: 09:00 - 18:00
                         </h6>
                       </div>
-                      <div class="col-2 col-md-12 py-auto">
+                      <div class="d-flex d-md-block justify-content-end col-3 col-md-12 py-auto">
                         <a href="https://www.linkedin.com/company/softcraft-llp" target="_blank" class="linkedin-icon">
                           <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -480,10 +482,11 @@
   </main>
   <footer class="color-bg-secondary py-1 py-md-4">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center" id="footer-inner">
         <a href="#">
           <img class="d-none d-md-block" src="./assets/images/Sofrcraft_logo.svg" alt="Softcraft Logo" />
-          <img class="d-block d-md-none" src="./assets/images/sign.svg" alt="Softcraft Logo" />
+          <img class="d-block d-md-none" width="38px" height="38px" src="./assets/images/sign.svg"
+            alt="Softcraft Logo" />
         </a>
         <ul class="list-unstyled d-none d-md-flex color-text-dark mb-0">
           <li class="nav-item me-5">

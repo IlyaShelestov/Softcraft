@@ -171,11 +171,18 @@ section {
   min-width: 300px;
   border-radius: 5px;
   border-radius: 45px;
+  font-family: "Gilroy-Semibold", sans-serif;
 }
 
 .btn:hover {
   background-color: #b3a1e5;
   color: white;
+}
+
+/* Welcome */
+
+#welcome h1 {
+  width: 888px;
 }
 
 /* Solutions */
@@ -255,22 +262,13 @@ section {
 
 #partners img {
   align-self: center;
+  filter: brightness(0) saturate(100%) invert(71%) sepia(31%) saturate(250%)
+    hue-rotate(195deg) brightness(95%) contrast(91%);
+  transition: filter 0.1s ease;
 }
 
-#partner1:hover {
-  content: url("../images/partners1-color.svg");
-}
-
-#partner2:hover {
-  content: url("../images/partners2-color.svg");
-}
-
-#partner3:hover {
-  content: url("../images/partners3-color.svg");
-}
-
-#partner4:hover {
-  content: url("../images/partners4-color.svg");
+#partners img:hover {
+  filter: none;
 }
 
 /* LinkedIn Icon */
@@ -314,6 +312,21 @@ footer .linkedin-icon svg {
 
 /* Contacts */
 
+#contacts input,
+#contacts textarea {
+  border: 1px solid #f0eefa;
+  border-radius: 6px;
+}
+
+#contacts input {
+  height: 40px;
+  padding: 13px 18px;
+}
+
+#contacts textarea {
+  padding: 6px 12px;
+}
+
 ::placeholder {
   color: #c3c8e5 !important;
   font-size: 16px;
@@ -344,6 +357,10 @@ footer .nav-link {
     border-bottom: 1px solid #e6e6e6;
   }
 
+  nav {
+    height: 54px;
+  }
+
   .btn {
     min-height: 45px;
     min-width: 236px;
@@ -357,6 +374,14 @@ footer .nav-link {
 
   #welcome {
     padding-bottom: 40px;
+  }
+
+  #welcome h1 {
+    width: 290px;
+  }
+
+  #welcome h5 {
+    width: 290px;
   }
 
   #solutions {
@@ -399,25 +424,13 @@ footer .nav-link {
     font-size: 14px;
   }
 
+  #partners img {
+    filter: none;
+  }
+
   #partners .d-flex {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-  }
-
-  #partner1 {
-    content: url("../images/partners1-color.svg");
-  }
-
-  #partner2 {
-    content: url("../images/partners2-color.svg");
-  }
-
-  #partner3 {
-    content: url("../images/partners3-color.svg");
-  }
-
-  #partner4 {
-    content: url("../images/partners4-color.svg");
   }
 
   #why-us img {
@@ -459,5 +472,17 @@ footer .nav-link {
 
   footer {
     background-color: white !important;
+  }
+
+  #footer-inner {
+    height: 54px;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #welcome h1 {
+    width: 615px;
   }
 }
